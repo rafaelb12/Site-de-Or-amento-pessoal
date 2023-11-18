@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+:root {
+    --azul: #1d0af7;
+    --amarelo: #f8ff00;
+}
+header {
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: #006DA4; 
+    padding: 20px;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    transition: background-color 0.3s
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-around;
+    
+}
+.container-nav ul {
+    display: flex;
+    text-align: center;
+    padding-top: 16px;
+    transition: transform 0.2s;
+}
+.container-nav li {
+    margin-left: 20px;
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.container-nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--amarelo);
+    transition: 0.3s;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.container-nav a::after {
+    content: ""; 
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 3px; 
+    border-radius: 50px;
+    box-shadow: 0 4px 10px black;
+    background-color: var(--amarelo); 
+    transform: scaleX(0); 
+    transform-origin: center;
+    transition: transform 0.3s;
+}
+.container-nav a:hover::after {
+    transform: scaleX(1);
+}
+.container-nav a:hover {
+    color: black;
+}
+.boas-vindas {
+    background: rgba(0, 0, 0, 0.8) url(https://i.pinimg.com/originals/dd/86/a4/dd86a4f084b7993623fbb71d4adbfb61.jpg) no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    background-blend-mode: darken;
+    margin-top: 80px;
+}
+.boas-vindas h1 {
+    font-family: "proxima-nova","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 100px 20px 10px 40px;
+    color: white;
+    font-size: 35px;
+    text-align: center;
+}
+.apresentacao {
+    padding: 10px 100px 10px 100px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.cadastro {
+    text-align: center;
+    color: white;
+    padding-top: 20px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+form input {
+    padding: 12px 40px 12px 10px;
+    width: 200px;
+    border: none;
+    border-radius: 20px ;
+    border-color: 20px solid #225577;
+}
+form button {
+    color: white;
+    background-color: var(--azul);
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+button:hover {
+    background-color: white;
+    color: var(--azul);
+}
+.graficos {
+    height: 120vh;
+}
+footer {
+    background-color: var(--azul);
+    color: white;
+    height: 200px;
+    padding: 60px;
+    text-align: center;
+}
+.linha {
+    background-color: white;
+    width: 96%;
+    height: 1px;
+    margin: 20px;
+}
+
+#if:hover{
+    background: white;
+    padding-top: 20px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 10px;
+    height: 10px;
+    width: 100px;
+    border-radius: 90px;
+}
+
+#ii:hover{
+    background: white;
+    padding-top: 20px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 10px;
+    height: 10px;
+    width: 100px;
+    border-radius: 90px;
+}           
+
+#it:hover{
+    background: white;
+    padding-top: 25px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 7px;
+    height: 10px;
+    width: 100px;
+    border-radius: 90px;
+}
+
+#lo{
+    background-color: #4285F4;
+    color: white;
+    border: none;
+    width: 9.5vh;
+    height: 3vh;
+    font-size: 15px;
+    display:flex;
+    align-items: center;
+    justify-content:center ;
+    justify-self: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px black;
+}
+#lo:hover {
+    background-color: white;
+    color: var(--azul);
+}
+
+#il{
+    margin-right: 2px;
+    color: white;
+}
+
+#ec{
+    color:white;
+    width: 100px;
+}
+
+#menu-toggle {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.graficos {
+    text-align: center;
+  }
+  .graficos form {
+    margin-top: 20px;
+  }
+  #financeChart {
+    width: 900px;
+    height: 400px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.4);
+    padding: 20px;
+  }
+
+  .graficos button {
+    background-color: var(--azul);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 0.4);
+    transition: 0.2s;
+    padding: 6px;
+    margin: 6px;
+  }
+
+  .graficos button:hover {
+    background-color: white;
+    color: var(--azul);
+  }
+
+  #situacaoFinanceira {
+    margin-top: 20px;
+  }
+
+  .inf{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    
+    }
+    
+    th, td {
+        padding: 10px;
+        
+    }
+    
+    td {
+        text-align: left;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    a:hover {
+        color: black;
+    }
+    
+    img {
+        max-width: 100%;
+    } 
+    
+    table li{
+        margin: 10px;
+    }
+
+@media (max-width: 768px) {
+    
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-nav li {
+        margin: 10px 0;
+    }
+
+    .boas-vindas h1 {
+        padding: 40px 20px 10px 20px;
+        font-size: 28px;
+    }
+
+    .apresentacao {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    form input {
+        width: 100%;
+    }
+
+    form button {
+        margin: 10px 0;
+    }
+
+    .sobre {
+        height: auto;
+    }
+
+    .imgs, .imgs-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 60%;
+    }
+    #menu-toggle {
+        display: block; /* Exibir em telas menores */
+    }
+    .graficos {
+        text-align: left;
+      }
+
+      .form input,
+      .form button {
+        width: 100%; /* Alterado para ocupar 100% da largura em telas menores */
+      }
+      #financeChart {
+        width: 400px;
+        height: 400px;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgb(0, 0, 0, 0.4);
+        padding: 20px;
+        padding-left: 50px;
+      }
+      #situacaoFinanceira {
+        text-align: center;
+      }
+    
+}
+
+/* Estilo para telas pequenas (máximo de 480px de largura) */
+@media (max-width: 480px) {
+    .boas-vindas h1 {
+        font-size: 24px;
+    }
+
+    .apresentacao {
+        font-size: 14px;
+    }
+}

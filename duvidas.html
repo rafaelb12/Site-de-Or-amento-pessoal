@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Economia</title>
+    <link rel="stylesheet" type="text/css" href="/css/duvidas.css">
+    <link rel="website icon" type="png" href="https://ganarconlared.com/wp-content/uploads/2016/06/1466603045_resolutions-24.png">
+</head>
+<body>
+    <div id="scroll-point" class="scroll"></div>
+    <header>
+       <a href="index.html"><img id="ec" src="/Imagens/Minhas Economias.png" alt=""></a> 
+        <nav class="container-nav">
+            <ul>
+                <li><a href="registro.html">Registros de despesas</a></li>
+                <li><a href="orcamento.html">Orçamento Financeiro</a></li>
+                <li><a href="graficos.html">Gráficos e relatórios</a></li>
+                <li><a href="dicas.html">Dicas de Economia</a></li>
+                <li><a id="if" href="#"><img src="https://img.icons8.com/material-rounded/24/facebook-f--v2.png" alt=""></a></li>
+                <li><a id="ii" href="#"><img src="https://img.icons8.com/material-rounded/24/instagram-new.png" alt=""></a></li>
+                <li><a id="it" href="#"><img src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt=""></a></li>
+                <li><a href="#"><button id="lo" ><img id="il" src="https://img.icons8.com/material-rounded/16/000000/lock--v1.png" alt=""><a id="b" href="#"></a><b>LOGIN</b></button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="duvidas">
+            <h2>Dúvidas Comuns</h2>
+            <P>Esclareça suas dúvidas rapidamente.</P>
+            <div class="accordion" id="faqAccordion">
+
+                <!-- Usuário -->
+                <h2>Usuário:</h2>
+                <div class="card">
+                    <div class="card-header" id="userHeadingOne">
+                        <h5 class="mb-0">
+                            <button class="btn" onclick="toggleCollapse('userCollapseOne')">
+                                Como faço para criar uma conta?<img width="25" src="https://img.icons8.com/dotty/80/expand-arrow.png" alt="expand-arrow"/>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="userCollapseOne" class="collapse">
+                        <div class="card-body">
+                            Para criar uma conta, clique no botão "Cadastro" na página inicial e siga as instruções para fornecer as informações necessárias.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="userHeadingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn" onclick="toggleCollapse('userCollapseTwo')">
+                                É possível alterar as informações da minha conta?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="userCollapseTwo" class="collapse">
+                        <div class="card-body">
+                            Sim, você pode editar suas informações de perfil na seção de configurações da conta após fazer o login.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="userHeadingThree">
+                        <h5 class="mb-0">
+                            <button class="btn" onclick="toggleCollapse('userCollapseThree')">
+                                O que fazer se eu esquecer minha senha?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="userCollapseThree" class="collapse">
+                        <div class="card-body">
+                            Na página de login, clique em "Esqueceu a senha?" e siga as instruções para redefinir sua senha por meio do e-mail cadastrado.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dados -->
+                <h2>Dados:</h2>
+                <div class="card">
+                    <div class="card-header" id="dataHeadingOne">
+                        <h5 class="mb-0">
+                            <button class="btn" onclick="toggleCollapse('dataCollapseOne')">
+                                Como meus dados são protegidos?<img width="25" src="https://img.icons8.com/dotty/80/expand-arrow.png" alt="expand-arrow"/>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="dataCollapseOne" class="collapse">
+                        <div class="card-body">
+                            Garantimos a segurança dos seus dados por meio de práticas avançadas de criptografia. Consulte nossa política de privacidade para obter mais detalhes.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="dataHeadingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn" onclick="toggleCollapse('dataCollapseTwo')">
+                                Como meus dados são protegidos?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="dataCollapseTwo" class="collapse">
+                        <div class="card-body">
+                            Solicitamos informações mínimas necessárias, como nome, endereço de e-mail e senha, para fornecer uma experiência personalizada.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="dataHeadingThree">
+                        <h5 class="mb-0">
+                            <button class="btn" onclick="toggleCollapse('dataCollapseThree')">
+                                O site compartilha meus dados com terceiros?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="dataCollapseThree" class="collapse">
+                        <div class="card-body">
+                            Não compartilhamos suas informações pessoais com terceiros sem seu consentimento. Consulte nossa política de privacidade para obter informações detalhadas.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Uso Geral -->
+                <h2>Uso Geral:</h2>
+                <div class="card">
+                    <div class="card-header" id="generalHeadingOne">
+                        <h5 class="mb-0">
+                            <button class="btn" onclick="toggleCollapse('generalCollapseOne')">
+                                Como registro minhas despesas no site?<img width="25" src="https://img.icons8.com/dotty/80/expand-arrow.png" alt="expand-arrow"/>
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="generalCollapseOne" class="collapse">
+                        <div class="card-body">
+                            Na página "Registros de Despesas", clique em "Adicionar Despesa" e preencha os detalhes necessários para registrar suas despesas.
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="generalHeadingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn" onclick="toggleCollapse('generalCollapseTwo')">
+                                É possível exportar meus dados financeiros?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="generalCollapseTwo" class="collapse">
+                        <div class="card-body">
+                            Sim, você pode exportar seus dados financeiros para formatos como CSV. Visite a seção de configurações para encontrar essa opção.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="generalHeadingThree">
+                        <h5 class="mb-0">
+                            <button class="btn" onclick="toggleCollapse('generalCollapseThree')">
+                                Há algum custo associado ao uso do serviço?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="generalCollapseThree" class="collapse">
+                        <div class="card-body">
+                            Oferecemos uma versão gratuita e, se houver, os custos associados aos planos premium serão claramente comunicados na seção de assinatura.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+                
+    <footer>
+        <div class="inf">
+            <table>
+                <tr>
+                    <th>Quem somos</th>
+                    <th>Links Úteis</th>
+                    <th>Site Seguro</th>
+                    <th>Siga-nos</th>
+                </tr>
+        
+                <tr>
+                    <td>O Orçamento Pessoal é um sistema da <br>VBB Software Ltda. Desde 2004, nosso<br> maior objetivo é entregar software útil,<br>
+                        funcional e de alta qualidade para <br> simplificar tarefas do dia a dia.</td>
+                    <td><li><a href="duvidas.html"><img width="15" height="15" src="https://img.icons8.com/3d-fluency/15/forward.png" alt="forward"/>Dúvidas Comuns</a></li>
+                        <li><a href="politica.html"><img width="15" height="15" src="https://img.icons8.com/3d-fluency/15/forward.png" alt="forward"/>Política de Privacidade</a></li>
+                        <li><a href="fale.html"><img width="15" height="15" src="https://img.icons8.com/3d-fluency/15/forward.png" alt="forward"/>Fale Conosco</a></li>
+                    </td>
+                    <td><img src="https://www.orcamentopessoal.net/img/ssl-secure.png" alt="" width="100px"></td>
+                    <td>
+                        <a id="if" href="#"><img src="https://img.icons8.com/material-rounded/24/facebook-f--v2.png" alt=""></a>
+                        <a id="ii" href="#"><img src="https://img.icons8.com/material-rounded/24/instagram-new.png" alt=""></a>
+                        <a id="it" href="#"><img src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt=""></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="linha"></div>
+        <p>Copyright &copy; 2023 Minhas Economias. Todos os direitos reservados.</p>
+    </footer>
+    <script type="text/javascript" src="/js/final.js"></script>
+</body>
+</html>

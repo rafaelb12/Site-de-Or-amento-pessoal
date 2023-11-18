@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Economia</title>
+    <link rel="stylesheet" type="text/css" href="/css/orcamento.css">
+    <link rel="website icon" type="png" href="https://ganarconlared.com/wp-content/uploads/2016/06/1466603045_resolutions-24.png">
+</head>
+<body>
+    <div id="scroll-point" class="scroll"></div>
+    <header>
+        <a href="index.html"><img id="ec" src="Imagens/Minhas Economias.png" alt="receive-change"/></a>
+
+        <nav class="container-nav">
+            <ul>
+                <li><a href="registro.html">Registros de despesas</a></li>
+                <li><a href="orcamento.html">Orçamento Financeiro</a></li>
+                <li><a href="graficos.html">Gráficos e relatórios</a></li>
+                <li><a href="dicas.html">Dicas de Economia</a></li>
+                <li><a id="if" href="#"><img src="https://img.icons8.com/material-rounded/24/facebook-f--v2.png" alt=""></a></li>
+                <li><a id="ii" href="#"><img src="https://img.icons8.com/material-rounded/24/instagram-new.png" alt=""></a></li>
+                <li><a id="it" href="#"><img src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt=""></a></li>
+                <li><a href="#"><button id="lo" ><img id="il" src="https://img.icons8.com/material-rounded/16/000000/lock--v1.png" alt=""><a id="b" href="#"></a><b>LOGIN</b></button></a></li>
+            </ul> 
+        </nav>
+    </header>
+    <main>
+        <section class="boas-vindas">
+            <h1>Orçamento Financeiro</h1>
+            <p class="apresentacao">
+                Tenha controle da sua vida financeira, aprendendo a utilizar e administrar seu dinheiro sem precisar sacrificar sua felicidade. O Minhas Economias está aqui para te mostrar que para ser o senhor do seu dinheiro, não é um bicho de sete cabeças. Tudo o que você precisa é de um orçamento básico para iniciar. Então te convido a fazer parte da nossa comunidade, onde iremos lhe mostrar o caminho para a prosperidade financeira!
+            </p>
+            <h3 class="cadastro">Cadastre-se gratuitamente</h3>
+            <form id="email">
+                <input type="email" placeholder="Insira seu email...">
+                <button>Cadastrar</button>
+            </form>
+        </section>
+        <section class="orcamento">
+          <h1>Orçamento Pessoal</h1>
+        <form id="budgetForm">
+            <label for="salary">Salário Mensal (R$):</label>
+            <input type="number" id="salary" required>
+
+            <label for="emergencyFund">Reserva de Emergência (%):</label>
+            <input type="number" id="emergencyFund" required>
+
+            <label for="description">Descrição da Despesa:</label>
+            <input type="text" id="description" required>
+
+            <label for="amount">Valor da Despesa (R$):</label>
+            <input type="number" id="amount" required>
+
+            <button type="button" onclick="calculateBudget()">Calcular Orçamento</button>
+        </form>
+
+        <div id="budgetResult"></div>
+
+
+        </section>
+    </main>
+
+    <div class="calculator">
+        <h2>Calculadora de Salário Líquido</h2>
+        <label for="salarioBruto">Salário Bruto:</label>
+        <input type="number" id="salarioBruto" placeholder="Digite o salário bruto">
+
+        <label for="descontos">Descontos:</label>
+        <input type="number" id="descontos" placeholder="Digite os descontos">
+
+        <label for="dependentes">Número de Dependentes:</label>
+        <input type="number" id="dependentes" placeholder="Digite o número de dependentes">
+
+        <button onclick="calcularSalarioLiquido()">Calcular</button>
+
+        <h3>Resultados:</h3>
+        <table id="resultado">
+            <tr>
+                <th>Evento</th>
+                <th>Alíquota</th>
+                <th>Proventos</th>
+                <th>Descontos</th>
+            </tr>
+            <tr>
+                <td>Base</td>
+                <td id="aliquotaBase"></td>
+                <td id="proventosBase"></td>
+                <td id="descontosBase"></td>
+            </tr>
+            <tr>
+                <td>Efetiva</td>
+                <td id="aliquotaEfetiva"></td>
+                <td id="proventosEfetiva"></td>
+                <td id="descontosEfetiva"></td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td></td>
+                <td id="totalProventos"></td>
+                <td id="totalDescontos"></td>
+            </tr>
+            <tr>
+                <td>Salário Líquido</td>
+                <td></td>
+                <td></td>
+                <td id="salarioLiquido"></td>
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <div class="inf">
+            <table>
+                <tr>
+                    <th>Quem somos</th>
+                    <th>Links Úteis</th>
+                    <th>Site Seguro</th>
+                    <th>Siga-nos</th>
+                </tr>
+        
+                <tr>
+                    <td>O Orçamento Pessoal é um sistema da <br>VBB Software Ltda. Desde 2004, nosso<br> maior objetivo é entregar software útil,<br>
+                        funcional e de alta qualidade para <br> simplificar tarefas do dia a dia.</td>
+                    <td><li><a href="duvidas.html"><img width="15" height="15" src="https://img.icons8.com/3d-fluency/15/forward.png" alt="forward"/>Dúvidas Comuns</a></li>
+                        <li><a href="politica.html"><img width="15" height="15" src="https://img.icons8.com/3d-fluency/15/forward.png" alt="forward"/>Política de Privacidade</a></li>
+                        <li><a href="fale.html"><img width="15" height="15" src="https://img.icons8.com/3d-fluency/15/forward.png" alt="forward"/>Fale Conosco</a></li>
+                    </td>
+                    <td><img src="https://www.orcamentopessoal.net/img/ssl-secure.png" alt="" width="100px"></td>
+                    <td>
+                        <a id="if" href="#"><img src="https://img.icons8.com/material-rounded/24/facebook-f--v2.png" alt=""></a>
+                        <a id="ii" href="#"><img src="https://img.icons8.com/material-rounded/24/instagram-new.png" alt=""></a>
+                        <a id="it" href="#"><img src="https://img.icons8.com/ios-glyphs/30/twitter--v1.png" alt=""></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="linha"></div>
+        <p>Copyright &copy; 2023 Minhas Economias. Todos os direitos reservados.</p>
+    </footer>
+    <script type="text/javascript" src="/js/main.js"></script>
+</body>
+</html>
